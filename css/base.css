@@ -919,6 +919,15 @@ textarea {
   text-shadow: 0 0 20px rgba(77, 78, 77, 0.8);
   cursor: pointer;
 }
+.wa-community-desc {
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+  max-width: 80%; /* Adjust the percentage as needed */
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 
 /*# sourceMappingURL=base.css.map */
