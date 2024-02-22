@@ -911,4 +911,14 @@ textarea {
   text-align: center;
 }
 
+.btn--whatsapp:hover span {
+  text-shadow: 0 0 10px rgba(0, 255, 0, 0.8);
+}
+
+.data-hub-title-index:hover {
+  text-shadow: 0 0 20px rgba(77, 78, 77, 0.8);
+  cursor: pointer;
+}
+
+
 /*# sourceMappingURL=base.css.map */
