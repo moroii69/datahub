@@ -28,6 +28,5 @@ DataHub LIET is continually evolving to meet the needs of students. If you have 
 If you have any questions, feedback, or concerns, please don't hesitate to contact us:
 
 - Email: [ufraanmohammed@gmail.com](mailto:ufraanmohammed@gmail.com)
-- Phone: +91 81257 09785
 
 Thank you for choosing DataHub LIET! We wish you success in your academic endeavors.
