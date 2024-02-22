@@ -928,6 +928,13 @@ textarea {
   margin-right: auto;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  border: 3px solid #ec008c; /* Adjust thickness and color as needed */
+}
+
+
 
 
 /*# sourceMappingURL=base.css.map */
