@@ -2,8 +2,6 @@
 
 Welcome to DataHub LIET! Your go-to platform for all things academic at Lords Institute of Engineering and Technology. As a first-year student, you can find all your college materials, textbooks, and references right here. Say goodbye to hunting for resources across different places. With DataHub LIET, everything you need to ace your exams and reach your educational milestones is just a click away. Ready to embark on your academic journey? Start exploring now!
 
-![DataHub LIET](datahub.png)
-
 ## What is DataHub LIET?
 
 DataHub LIET is a centralized platform designed to streamline access to academic resources for first-year students at Lords Institute of Engineering and Technology (LIET). Whether you're looking for textbooks, lecture materials, or reference documents, DataHub LIET aims to provide a convenient and efficient way to access all necessary resources.
