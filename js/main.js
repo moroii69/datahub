@@ -84,31 +84,31 @@
         $('input, textarea, select').placeholder();
     };
 
+// function for initializing the final countdown
+var initializeFinalCountdown = function() {
+    // target final date for the countdown
+    var finalDate = new Date("March 30, 2024 12:37:25").getTime();
 
-   /* final countdown
-    * ------------------------------------------------------ */
-    var ssFinalCountdown = function() {
-
-        var finalDate =  new Date("March 30, 2024 12:37:25").getTime();
-
-        $('.home-content__clock').countdown(finalDate)
+    // initialize countdown timer on elements with class 'home-content__clock'
+    $('.home-content__clock').countdown(finalDate)
+        // event listeners for countdown updates and finish
         .on('update.countdown finish.countdown', function(event) {
+            // HTML template for displaying countdown elements
+            var template = '<div class=\"top\"><div class=\"time days\">' +
+                '%D <span>day%!D</span>' +
+                '</div></div>' +
+                '<div class=\"time hours\">' +
+                '%H <span>H</span></div>' +
+                '<div class=\"time minutes\">' +
+                '%M <span>M</span></div>' +
+                '<div class=\"time seconds\">' +
+                '%S <span>S</span></div>';
 
-            var str = '<div class=\"top\"><div class=\"time days\">' +
-                      '%D <span>day%!D</span>' + 
-                      '</div></div>' +
-                      '<div class=\"time hours\">' +
-                      '%H <span>H</span></div>' +
-                      '<div class=\"time minutes\">' +
-                      '%M <span>M</span></div>' +
-                      '<div class=\"time seconds\">' +
-                      '%S <span>S</span></div>';
-
-            $(this)
-            .html(event.strftime(str));
-
+            // update the countdown display with formatted time
+            $(this).html(event.strftime(template));
         });
-    };
+};
+
 
     
 
