@@ -56,20 +56,19 @@
                         <div class="custom-block-1-2 custom-block-m-1-2 custom-block-tab-full">
                             <style>
                                 .custom-entry__title a {
-                                    color: white; 
-                                    text-decoration: none; 
+                                    color: white; /* Change link color to white */
+                                    text-decoration: none;
                                 }
                                 .custom-entry__title {
-                                    background-color: rgba(236, 0, 140, 0.2); 
-                                    padding: 10px; 
+                                    color: white; /* Change text color to white */
+                                    background-color: rgba(236, 0, 140, 0.4);
+                                    padding: 10px;
                                     border-radius: 30px;
-                                    margin-bottom: 20px; 
-                                    transition: color 0.3s, box-shadow 0.3s, opacity 0.3s; 
+                                    margin-bottom: 20px;
+                                    transition: color 0.3s, transform 0.3s; /* Added transform property for smooth movement */
                                 }
                                 .custom-entry__title:hover {
-                                    color: white;
-                                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
-                                    opacity: 0.3;
+                                    transform: translateY(-5px); /* Move the text upwards by 5px when hovered */
                                 }
                             </style>
                             <div class="custom-col-block custom-entry">
@@ -88,6 +87,8 @@
                             </div>
                         </div>
                     </div>
+                    
+                    
                     
                     
                     
