@@ -1,11 +1,11 @@
 # DataHub LIET
 
-Welcome to DataHub LIET! Your go-to platform for all things academic at Lords Institute of Engineering and Technology. As a first-year student, you can find all your college materials, textbooks, and references right here. Say goodbye to hunting for resources across different places. With DataHub LIET, everything you need to ace your exams and reach your educational milestones is just a click away. Ready to embark on your academic journey? Start exploring now!
+Welcome to DataHub LIET! Your go-to platform for all things academic at Lords Institute of Engineering and Technology. As a first-year student, you can find all your college materials, textbooks, and references right here. Say goodbye to hunting for resources across different places. With DataHub LIET, **powered by [CodeWave Hub](https://github.com/LIEThyd)**, everything you need to ace your exams and reach your educational milestones is just a click away. Ready to embark on your academic journey? Start exploring now!
 
 
 ## What is DataHub LIET?
 
-DataHub LIET is a centralized platform designed to streamline access to academic resources for first-year students at Lords Institute of Engineering and Technology (LIET). Whether you're looking for textbooks, lecture materials, or reference documents, DataHub LIET aims to provide a convenient and efficient way to access all necessary resources.
+DataHub LIET is a centralized platform designed to streamline access to academic resources for first-year students at Lords Institute of Engineering and Technology (LIET). Whether you're looking for textbooks, lecture materials, or reference documents, we've got you covered. DataHub LIET is **powered by CodeWave Hub**, which aims to provide a convenient and efficient way to access all necessary resources free of charge.
 
 ## Key Features
 
@@ -21,7 +21,7 @@ To get started with DataHub LIET, simply visit [DataHub LIET](https://ufraan.git
 
 ## Contributing
 
-DataHub LIET is continually evolving to meet the needs of students. If you have suggestions for additional features or improvements, we welcome your contributions! Please reach out to the administrators to discuss how you can contribute to enhancing the platform for the benefit of all users.
+DataHub LIET is an **open-source project powered by CodeWave Hub**, continually evolving to meet the needs of students. If you have suggestions for additional features or improvements, we welcome your contributions! All code contributions, including those of people having commit access, must go through a pull request and be approved before being merged. This is to ensure a proper review of all the code.
 
 ## Contact Us
 
@@ -29,4 +29,16 @@ If you have any questions, feedback, or concerns, please don't hesitate to conta
 
 - Email: [ufraanmohammed@gmail.com](mailto:ufraanmohammed@gmail.com)
 
-Thank you for choosing DataHub LIET! We wish you success in your academic endeavors.
+
+<!--                                License       -->
+## License
+This repositry is uder MIT License. By contributing, you agree that your contributions will be licensed under its <a href="https://github.com/abdulvasay-234/datahub/blob/main/LICENSE"> MIT License.</a>
+
+
+<!--                            contributers    -->
+## Thanks to all the contributors ❤️
+<a href = "https://github.com/abdulvasay-234/datahub/graphs/contributors">
+  <img src = "https://contrib.rocks/image?repo=abdulvasay-234/datahub"/>
+</a>
+
+
