@@ -2359,8 +2359,7 @@ html.no-csstransitions .home-content__main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: auto;
-  width: 700px;
+  max-width: 700px;
 }
 
 .semOne h2 {
@@ -2382,6 +2381,12 @@ html.no-csstransitions .home-content__main {
   box-shadow: 0 01px 10px #706a6e;
   font-size: 110%;
   font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  .row.home-content__main .button {
+    width: calc(50% - 20px);
+  }
 }
 
 
