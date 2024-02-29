@@ -2341,9 +2341,9 @@ html.no-csstransitions .home-content__main {
 }
 
 .row.home-content__main .button {
-  display: flex; 
+  display: flex;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
   background-color: #ec008c;
   color: #ffffff;
   border: none;
@@ -2352,25 +2352,37 @@ html.no-csstransitions .home-content__main {
   cursor: pointer;
   border-radius: 5px;
   transition: transform 0.3s ease, box-shadow 0.3s ease, font-size 0.3s ease, font-weight 0.3s ease;
-}
-
-
-.row.home-content__main .button:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  font-size: 120%;
-  font-weight: bold;
+  width: auto; /* Set initial width to auto */
 }
 
 .semOne {
-  display: flex; 
+  display: flex;
   flex-direction: column;
   align-items: center;
-  height: auto; 
-  background-color: white;
+  height: auto;
   width: 700px;
 }
 
+.semOne h2 {
+  color: #ffffff;
+  font-size: 4rem;
+}
+
+.row.home-content__main .button span {
+  visibility: hidden;
+  white-space: nowrap;
+}
+
+.row.home-content__main .button {
+  width: calc(100% - 20px); 
+}
+
+.row.home-content__main .button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 01px 10px #706a6e;
+  font-size: 110%;
+  font-weight: bold;
+}
 
 
 /*# sourceMappingURL=main.css.map */
