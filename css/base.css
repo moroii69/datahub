@@ -435,7 +435,7 @@ textarea {
 
 .col-eight,
 .col-2-3 {
-  width: 66.66667%;
+  width: 100%;
 }
 
 .col-nine,
@@ -971,3 +971,70 @@ button:active {
   }
 }
 
+
+.main-content-centre-sec {
+  display: flex;
+  justify-content: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 50px; 
+  text-align: center;
+}
+
+.grid-item {
+  padding: 20px; 
+  border: 1px solid #ec008c; 
+  height: 600px;
+  width: 420px;
+}
+.grid-item h2 {
+  color: white;
+}
+
+.grid-item h2 {
+  font-size: 20px; /* Adjust font size as needed */
+  font-weight: bold; /* Make headings bold */
+  margin-bottom: 10px; /* Add space below heading */
+  color:white;
+  font-weight: lighter;
+}
+
+.grid-item button {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background-color: #2e2d2d;
+  border: 1px solid #ec008c;
+  border-radius: 5px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center; 
+  display: inline-block;
+  text-transform: capitalize;
+  font-weight: lighter;
+}
+
+.grid-item button:hover {
+  background-color: rgba(46, 45, 45, 0.8);
+  color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 0px 10px #ec008c;
+}
+
+.grid-item button:active {
+  background-color: rgba(46, 45, 45, 0.6);
+  color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 0px 4px #ec008c;
+}
+
+.main-content-centre-sec {
+  display: flex;
+  justify-content: center;
+  ;
+}
+.scrollbar {
+  overflow-y: scroll; /* Add scrollbar for vertical orientation */
+  height: 100vh; /* Set maximum height */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
