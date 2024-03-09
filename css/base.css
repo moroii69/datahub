@@ -969,6 +969,7 @@ button:active {
     grid-template-columns: 1fr; 
     width: 90%;
   }
+
 }
 
 
@@ -990,16 +991,12 @@ button:active {
   height: 600px;
   width: 420px;
 }
-.grid-item h2 {
-  color: white;
-}
 
 .grid-item h2 {
-  font-size: 20px; /* Adjust font size as needed */
-  font-weight: bold; /* Make headings bold */
-  margin-bottom: 10px; /* Add space below heading */
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
   color:white;
-  font-weight: lighter;
 }
 
 .grid-item button {
@@ -1030,11 +1027,18 @@ button:active {
   box-shadow: 0px 0px 4px #ec008c;
 }
 
-.main-content-centre-sec {
-  display: flex;
-  justify-content: center;
-  ;
+@media screen and (max-width: 768px) { 
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr); 
+    gap: 20px; 
+  }
+
+  .grid-item {
+    width: auto; 
+    height: auto;
+  }
 }
+
 
 
 .scrollbar {
