@@ -1007,8 +1007,8 @@ button:active {
   border: 1px solid #ec008c;
   border-radius: 5px;
   cursor: pointer;
-  color: rgba(255, 255, 255, 0.5);
   text-align: center; 
+  color: white;
   display: inline-block;
   text-transform: capitalize;
   font-weight: lighter;
@@ -1046,4 +1046,3 @@ button:active {
   width: 100%;
   display: inline-block;
 }
-
