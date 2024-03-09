@@ -986,10 +986,11 @@ button:active {
 }
 
 .grid-item {
-  padding: 20px; 
+  padding-bottom: 20px;
   border: 1px solid #ec008c; 
-  height: 600px;
-  width: 420px;
+  height: 500px;
+  width: 400px;
+  box-shadow: #ec008c 0px 0px 10px;
 }
 
 .grid-item h2 {
@@ -997,7 +998,7 @@ button:active {
   font-weight: bold;
   margin-bottom: 10px;
   color:white;
-}
+  }
 
 .grid-item button {
   margin-bottom: 10px;
@@ -1038,8 +1039,6 @@ button:active {
     height: auto;
   }
 }
-
-
 
 .scrollbar {
   overflow-y: scroll;
