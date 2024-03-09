@@ -942,12 +942,14 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr); 
   gap: 10px; 
-  width: 800px; 
+  width: 1000px; 
   margin: auto; 
 }
 
 button {
   padding: 15px 30px;
+  margin-bottom: 10px;
+  margin-top: 10px;
   background-color: #2e2d2d;
   border: 1px solid #ec008c;
   border-radius: 5px;
