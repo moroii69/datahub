@@ -923,7 +923,7 @@ textarea {
   padding: 10px;
   margin: 10px;
   display: inline-block;
-  max-width: 80%; /* Adjust the percentage as needed */
+  max-width: 80%; 
   margin-left: auto;
   margin-right: auto;
 }
@@ -931,8 +931,32 @@ textarea {
 body {
   margin: 0;
   padding: 0;
-  border: 3px solid #ec008c; /* Adjust thickness and color as needed */
+  border: 3px solid #ec008c; 
 }
 
 
-/*# sourceMappingURL=base.css.map */
+.box {
+  border: 2px solid #ec008c;
+  border-radius: 2px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 10px; 
+  width: 800px; 
+  margin: auto; 
+}
+
+button {
+  padding: 15px 30px;
+  background-color: #2e2d2d;
+  border: 1px solid #ec008c;
+  border-radius: 5px;
+  cursor: pointer;
+  color: rgb(255, 255, 255, 0.5);
+}
+
+button:hover {
+  background-color: #f0f0f0;
+  color: black;
+}
+
