@@ -952,8 +952,16 @@ button {
 }
 
 button:hover {
-  background-color: #f0f0f0;
-  color: black;
+  background-color: rgba(46, 45, 45, 0.8);
+  color: rgba(255, 255, 255, 0.8);
+  box-shadow: #ec008c 0px 0px 10px;
+}
+
+button:active {
+  background-color: rgba(46, 45, 45, 0.6);
+  color: rgba(255, 255, 255, 0.6);
+  box-shadow: #ec008c 0px 0px 4px;
+
 }
 
 @media screen and (max-width: 600px) {
