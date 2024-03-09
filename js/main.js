@@ -84,30 +84,38 @@
         $('input, textarea, select').placeholder();
     };
 
-// function for initializing the final countdown
+// Function for initializing the final countdown
 var initializeFinalCountdown = function() {
-    // target final date for the countdown
-    var finalDate = new Date("March 30, 2024 12:37:25").getTime();
+    // Target final date for the countdown
+    var finalDate = new Date("April 10, 2024 12:37:25").getTime();
 
-    // initialize countdown timer on elements with class 'home-content__clock'
-    $('.home-content__clock').countdown(finalDate)
-        // event listeners for countdown updates and finish
-        .on('update.countdown finish.countdown', function(event) {
-            // HTML template for displaying countdown elements
-            var template = '<div class=\"top\"><div class=\"time days\">' +
-                '%D <span>day%!D</span>' +
-                '</div></div>' +
-                '<div class=\"time hours\">' +
-                '%H <span>H</span></div>' +
-                '<div class=\"time minutes\">' +
-                '%M <span>M</span></div>' +
-                '<div class=\"time seconds\">' +
-                '%S <span>S</span></div>';
+    // Function to update the countdown display
+    function updateCountdown() {
+        var currentTime = new Date().getTime();
+        var timeDifference = finalDate - currentTime;
 
-            // update the countdown display with formatted time
-            $(this).html(event.strftime(template));
-        });
+        var days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+        // Update the existing countdown elements with the formatted time
+        document.querySelector('.home-content__clock .time.days').innerHTML = days + ' <span>day' + (days !== 1 ? 's' : '') + '</span>';
+        document.querySelector('.home-content__clock .time.hours').innerHTML = hours + ' <span>H</span>';
+        document.querySelector('.home-content__clock .time.minutes').innerHTML = minutes + ' <span>M</span>';
+        document.querySelector('.home-content__clock .time.seconds').innerHTML = seconds + ' <span>S</span>';
+    }
+
+    // Update the countdown initially
+    updateCountdown();
+
+    // Update the countdown every second
+    setInterval(updateCountdown, 1000);
 };
+
+// Call the function to initialize the countdown
+initializeFinalCountdown();
+
 
 
     
