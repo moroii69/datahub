@@ -928,22 +928,16 @@ textarea {
   margin-right: auto;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  border: 3px solid #ec008c; 
-}
-
 
 .box {
   border: 2px solid #ec008c;
   border-radius: 2px;
   padding: 20px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr); 
-  gap: 10px; 
-  width: 1000px; 
-  margin: auto; 
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  width: 1000px;
+  margin: auto;
 }
 
 button {
@@ -960,5 +954,12 @@ button {
 button:hover {
   background-color: #f0f0f0;
   color: black;
+}
+
+@media screen and (max-width: 600px) {
+  .box {
+    grid-template-columns: 1fr; 
+    width: 90%;
+  }
 }
 
