@@ -113,8 +113,6 @@ var initializeFinalCountdown = function() {
     
 
 
-   /* AjaxChimp
-    * ------------------------------------------------------ */
     var ssAjaxChimp = function() {
         
         $('#mc-form').ajaxChimp({
@@ -122,16 +120,6 @@ var initializeFinalCountdown = function() {
             url: cfg.mailChimpURL
         });
 
-        // Mailchimp translation
-        //
-        //  Defaults:
-        //	 'submit': 'Submitting...',
-        //  0: 'We have sent you a confirmation email',
-        //  1: 'Please enter a value',
-        //  2: 'An email address must contain a single @',
-        //  3: 'The domain portion of the email address is invalid (the portion after the @: )',
-        //  4: 'The username portion of the email address is invalid (the portion before the @: )',
-        //  5: 'This email address looks fake or invalid. Please enter a real email address'
 
         $.ajaxChimp.translations.es = {
             'submit': 'Submitting...',
@@ -160,3 +148,20 @@ var initializeFinalCountdown = function() {
 
 
 })(jQuery);
+
+// buttons on index.html submit script
+function submitForm(course) {
+    var form = document.getElementById('redirectForm');
+    var action = 'index-main2.html';
+
+    if (course === 'Civil Engineering' || course === 'Mechanical Engineering' || course === 'Computer Science Engineering' || course === 'Computer Science - DS') {
+        action = 'index-main1.html';
+    }
+
+    form.action = action;
+
+    document.getElementById('course').value = course;
+
+    // Submit the form
+    form.submit();
+}

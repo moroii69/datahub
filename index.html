@@ -61,16 +61,19 @@
     ================================================== -->
     <main>
         <div class="row">
-            <div class="box">
-                <button>Civil Engineering</button>
-                <button>Computer Science</button>
-                <button>Computer Science - DS</button>
-                <button>Computer Science Engineering</button>
-                <button>Computer Science - ML</button>
-                <button>Electronics and Communication Engineering</button>
-                <button>Information Technology</button>
-                <button>Mechanical Engineering</button>
-            </div>
+            <form id="redirectForm" method="GET">
+                <div class="box">
+                    <button onclick="submitForm('Civil Engineering')">Civil Engineering</button>
+                    <button onclick="submitForm('Computer Science')">Computer Science</button>
+                    <button onclick="submitForm('Computer Science - DS')">Computer Science - DS</button>
+                    <button onclick="submitForm('Computer Science Engineering')">Computer Science Engineering</button>
+                    <button onclick="submitForm('Computer Science - ML')">Computer Science - ML</button>
+                    <button onclick="submitForm('Electronics and Communication Engineering')">Electronics and Communication Engineering</button>
+                    <button onclick="submitForm('Information Technology')">Information Technology</button>
+                    <button onclick="submitForm('Mechanical Engineering')">Mechanical Engineering</button>
+                </div>
+                <input type="hidden" id="course" name="course">
+            </form>
         </div>
         <header>
         </header>
