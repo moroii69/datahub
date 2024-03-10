@@ -2359,7 +2359,7 @@ html.no-csstransitions .home-content__main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 700px; /* Use max-width instead of width for better responsiveness */
+  max-width: 700px;
 }
 
 .semOne h2 {
@@ -2383,11 +2383,9 @@ html.no-csstransitions .home-content__main {
   font-weight: bold;
 }
 
-/* Media Query for Mobile Phones */
 @media only screen and (max-width: 600px) {
   .row.home-content__main .button {
-    width: calc(50% - 20px); /* Adjust the width for smaller screens */
-    font-size: 80%; /* Decrease font size for smaller screens */
-  }
+    width: calc(50% - 20px); 
+    font-size: 80%; 
 }
 
