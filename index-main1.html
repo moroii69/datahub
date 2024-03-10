@@ -237,26 +237,36 @@
     <script src="js/polygons.js"></script>
     <script src="js/main.js"></script>
     <script>
+        function downloadFile(url, filename) {
+            var link = document.createElement('a');
+            link.href = url;
+            link.download = filename;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    
         function openMathematics1() {
-            window.open("https://ufraan.github.io/datahub/data/g1/question_banks/m1/m1-qb.pdf", "_blank"); 
+            downloadFile("https://ufraan.github.io/datahub/data/g1/question_banks/m1/m1-qb.pdf", "m1-qb.pdf"); 
         }
     
         function openEnvironmentalSciences() {
-            window.open("https://ufraan.github.io/datahub/data/g1/question_banks/es/es-qb.pdf", "_blank"); 
+            downloadFile("https://ufraan.github.io/datahub/data/g1/question_banks/es/es-qb.pdf", "es-qb.pdf"); 
         }
     
         function openEngineeringPhysics() {
-            window.open("https://ufraan.github.io/datahub/data/g1/question_banks/ep/ep-qb.pdf", "_blank");
+            downloadFile("https://ufraan.github.io/datahub/data/g1/question_banks/ep/ep-qb.pdf", "ep-qb.pdf");
         }
     
         function openUniversalHumanValues() {
-            window.open("https://ufraan.github.io/datahub/data/g1/question_banks/ep/ep-qb.pdf", "_blank"); 
+            downloadFile("https://ufraan.github.io/datahub/data/g1/question_banks/ep/ep-qb.pdf", "uhv-qb.pdf"); 
         }
     
         function openProgrammingForProblemSolving() {
-            window.open("https://ufraan.github.io/datahub/data/g1/question_banks/pps/pps-qb.pdf", "_blank"); 
+            downloadFile("https://ufraan.github.io/datahub/data/g1/question_banks/pps/pps-qb.pdf", "pps-qb.pdf"); 
         }
     </script>
+    
 
 </body>
 
