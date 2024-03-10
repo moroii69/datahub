@@ -1133,3 +1133,20 @@ html, body {
   padding-top: 20px;
 }
 
+
+.top-header-name-group {
+  padding: 10px 20px;
+  align-items: center;
+  text-align: center;
+  color: white;
+  height: 40px;
+  padding-bottom: 20px;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: -50px;
+  font-size: 5rem;
+}
+
+.top-header-name-group:hover {
+  text-shadow: white 0px 0px 10px;
+}
