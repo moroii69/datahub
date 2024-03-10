@@ -237,6 +237,10 @@
     <script src="js/polygons.js"></script>
     <script src="js/main.js"></script>
     <script>
+        function isMobileDevice() {
+            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        }
+    
         function downloadFile(url, filename) {
             var link = document.createElement('a');
             link.href = url;
@@ -247,25 +251,56 @@
         }
     
         function openMathematics1() {
-            downloadFile("https://ufraan.github.io/datahub/data/g1/question_banks/m1/m1-qb.pdf", "m1-qb.pdf"); 
+            var url = "https://ufraan.github.io/datahub/data/g1/question_banks/m1/m1-qb.pdf";
+            var filename = "m1-qb.pdf";
+            if (isMobileDevice()) {
+                downloadFile(url, filename);
+            } else {
+                window.open(url, "_blank");
+            }
         }
     
         function openEnvironmentalSciences() {
-            downloadFile("https://ufraan.github.io/datahub/data/g1/question_banks/es/es-qb.pdf", "es-qb.pdf"); 
+            var url = "https://ufraan.github.io/datahub/data/g1/question_banks/es/es-qb.pdf";
+            var filename = "es-qb.pdf";
+            if (isMobileDevice()) {
+                downloadFile(url, filename);
+            } else {
+                window.open(url, "_blank");
+            }
         }
     
         function openEngineeringPhysics() {
-            downloadFile("https://ufraan.github.io/datahub/data/g1/question_banks/ep/ep-qb.pdf", "ep-qb.pdf");
+            var url = "https://ufraan.github.io/datahub/data/g1/question_banks/ep/ep-qb.pdf";
+            var filename = "ep-qb.pdf";
+            if (isMobileDevice()) {
+                downloadFile(url, filename);
+            } else {
+                window.open(url, "_blank");
+            }
         }
     
         function openUniversalHumanValues() {
-            downloadFile("https://ufraan.github.io/datahub/data/g1/question_banks/ep/ep-qb.pdf", "uhv-qb.pdf"); 
+            var url = "https://ufraan.github.io/datahub/data/g1/question_banks/ep/ep-qb.pdf";
+            var filename = "uhv-qb.pdf";
+            if (isMobileDevice()) {
+                downloadFile(url, filename);
+            } else {
+                window.open(url, "_blank");
+            }
         }
     
         function openProgrammingForProblemSolving() {
-            downloadFile("https://ufraan.github.io/datahub/data/g1/question_banks/pps/pps-qb.pdf", "pps-qb.pdf"); 
+            var url = "https://ufraan.github.io/datahub/data/g1/question_banks/pps/pps-qb.pdf";
+            var filename = "pps-qb.pdf";
+            if (isMobileDevice()) {
+                downloadFile(url, filename);
+            } else {
+                window.open(url, "_blank");
+            }
         }
     </script>
+    
     
 
 </body>
