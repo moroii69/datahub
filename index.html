@@ -37,6 +37,26 @@
     <!-- header 
     ================================================== -->
     <header>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
         
     <div class="row">
         <div class="col-twelve">
@@ -49,7 +69,7 @@
                 Engineering and Technology. As a <b>first-year student</b>, you can find all your <b>college materials, 
                 textbooks, and references </b>right here. <em>&zwj;&zwj;&zwj;&zwj;&#x1F44B;&zwj;&zwj;&zwj;&zwj;
                 Say goodbye to hunting for resources across different places. </em>
-                With <b>DataHub LIET, powered by <a href="httpe://codewavehub.tech">CodeWave Hub</a></b>, everything you need to ace your exams and reach your educational milestones is just a 
+                With <b>DataHub LIET, powered by <a href="https://codewavehub.tech" target="_blank">CodeWave Hub</a></b>, everything you need to ace your exams and reach your educational milestones is just a 
                 click away. Ready to embark on your academic journey? Start exploring now!
             </p>
             
@@ -98,7 +118,6 @@
             <p>&copy; <a href="httpe://codewavehub.tech">CodeWave Hub</a></p>
         </div>
         
-        
     </main> <!-- /main -->
 
     
@@ -122,6 +141,60 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        const coords = { x: 0, y: 0 };
+        const circles = document.querySelectorAll(".circle");
+
+        const colors = [
+        "#ec008c", "#ec008c", "#ec008c", "#ec008c", "#ec008c", "#ec008c", "#ec008c", "#ec008c", "#ec008c", "#ec008c",
+        "#ec008c", "#ec008c", "#ec008c", "#ec008c", "#ec008c", "#ec008c", "#ec008c", "#ec008c", "#ec008c", "#ec008c",
+        "#ec008c", "#ec008c", "#ec008c", "#ec008c", "#ec008c"
+        ];
+        colors.reverse();
+
+
+
+        circles.forEach(function (circle, index) {
+        circle.x = 0;
+        circle.y = 0;
+        circle.style.backgroundColor = colors[index % colors.length];
+        });
+
+        window.addEventListener("mousemove", function(e){
+        coords.x = e.clientX;
+        coords.y = e.clientY;
+        });
+
+        function animateCircles() {
+        let x = coords.x;
+        let y = coords.y;
+
+        circles.forEach(function (circle, index) {
+            circle.style.left = x - 12 + "px";
+            circle.style.top = y - 12 + "px";
+
+            circle.style.scale = (circles.length - index) / circles.length;
+
+            circle.x = x;
+            circle.y = y;
+
+            const nextCircle = circles[index + 1] || circles[0];
+            x += (nextCircle.x - x) * 0.3;
+            y += (nextCircle.y - y) * 0.3;
+        });
+
+        requestAnimationFrame(animateCircles);
+        }
+
+        animateCircles();
+
+        window.onload = function() {
+            document.addEventListener('contextmenu', function(e) {
+                e.preventDefault();
+                alert("Right-click is blocked on this page.");
+            });
+        };
+    </script>
 
 </body>
 

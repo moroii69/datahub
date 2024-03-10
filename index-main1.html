@@ -369,6 +369,13 @@
 
         animateCircles();
 
+        window.onload = function() {
+            document.addEventListener('contextmenu', function(e) {
+                e.preventDefault();
+                alert("Right-click is blocked on this page.");
+            });
+        };
+
     </script>
     
     

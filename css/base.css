@@ -1092,7 +1092,38 @@ button:active {
   opacity: 0.5;
 }
 
+.row button:hover {
+  cursor: none;
+}
+
 html, body {
   scroll-behavior: smooth;
   cursor: none;
+}
+
+.lead a:hover {
+  cursor: none;
+}
+
+.data-hub-title-index h1:hover {
+  cursor: none;
+}
+
+.wa-community-desc span:hover {
+  cursor: none;
+}
+
+
+.home-copyright-index a:hover {
+  cursor: none;
+}
+
+.data-hub-title-index:hover {
+  cursor: none;
+}
+
+
+
+.row .home-copyright {
+  padding-top: 20px;
 }
