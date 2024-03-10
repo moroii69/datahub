@@ -2352,7 +2352,7 @@ html.no-csstransitions .home-content__main {
   cursor: pointer;
   border-radius: 5px;
   transition: transform 0.3s ease, box-shadow 0.3s ease, font-size 0.3s ease, font-weight 0.3s ease;
-  width: auto; /* Set initial width to auto */
+  width: auto; 
 }
 
 .semOne {
@@ -2389,3 +2389,4 @@ html.no-csstransitions .home-content__main {
     font-size: 80%; 
 }
 
+}
