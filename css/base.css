@@ -1136,7 +1136,7 @@ html, body {
 
 .top-header-name-group {
   padding: 10px 20px;
-  align-items: center;
+  align-items: center; 
   text-align: center;
   color: white;
   height: 40px;
