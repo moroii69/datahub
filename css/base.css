@@ -1054,7 +1054,6 @@ button:active {
   background-color: rgba(46, 45, 45, 0.8);
   color: rgba(255, 255, 255, 0.8);
   box-shadow: 0px 0px 10px #ec008c;
-  cursor: none;
 }
 
 .grid-item button:active,
@@ -1114,16 +1113,16 @@ button:active {
   opacity: 0.5;
 }
 
-.row button:hover {
+/* .row button:hover {
   cursor: none;
-}
+} */
 
 html, body {
   scroll-behavior: smooth;
-  cursor: none;
+  /* cursor: none; */
 }
 
-.lead a:hover {
+/* .lead a:hover {
   cursor: none;
 }
 
@@ -1133,17 +1132,17 @@ html, body {
 
 .wa-community-desc span:hover {
   cursor: none;
-}
+} */
 
 
-.home-copyright-index a:hover {
+/* .home-copyright-index a:hover {
   cursor: none;
 }
 
 .data-hub-title-index:hover {
   cursor: none;
 }
-
+ */
 
 
 .row .home-copyright {
@@ -1167,3 +1166,11 @@ html, body {
 .top-header-name-group:hover {
   text-shadow: white 0px 0px 10px;
 }
+
+
+.row .box .content:hover {
+  text-shadow: white 0px 0px 10px; 
+  cursor: pointer;
+  
+}
+
