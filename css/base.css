@@ -931,7 +931,7 @@ textarea {
 
 
 .box {
-  border: 2px solid #ec008c;
+  /* border: 2px solid #ec008c; */
   border-radius: 2px;
   padding: 20px;
   display: grid;
@@ -944,6 +944,7 @@ textarea {
 
 .divider {
   border-right: 1px solid #ec008c;
+  opacity: 0.2;
 }
 
 .content {
@@ -1173,11 +1174,11 @@ html, body {
 }
 
 
-.row .box .content:hover {
+/* .row .box .content:hover {
   text-shadow: white 0px 0px 10px; 
   cursor: pointer;
 
-}
+} */
 
 .box-top-content-sem {
   margin-bottom: 30px;
@@ -1201,5 +1202,105 @@ html, body {
 }
 
 .marquee a {
+  text-decoration: none;
+}
+
+.home-copyright-index p{
+  margin-top: 60px;
+  opacity: 0.8;
+}
+
+
+.survey-form {
+  margin-top: -80px;
+  padding-bottom: 8px;
+
+}
+/* survey form button start */
+.survey-form button{
+  border: none;
+  background-color: rgba(46, 45, 45, 0.5);
+  margin-top: 80px;
+}
+
+
+.survey-form button {
+  font-size: 1.6rem;
+  
+  transition: font-size 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.survey-form button:hover {
+  font-size: 1.8rem;
+  box-shadow: none;
+}
+/* suvery form button end */
+
+
+
+/* sem1 and sem2 buttons */
+.box button{
+  border: none;
+  opacity: 0.8;
+}
+.box button {
+  font-size: 1.7rem;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  transition: font-size 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.box button:hover {
+  font-size: 2rem;
+  box-shadow: none;
+  text-shadow: none;
+  opacity: 0.8;
+}
+
+.contribute-text {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  font-size: 16px;
+  color: #555;
+  padding: 10px 10px 10px 10px;
+}
+
+.contribute-text a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contribute-text a:hover {
+  text-decoration: underline;
+}
+
+.home-copyright-index {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+}
+
+
+.col-twelve p{
+  margin-bottom: 200px;
+}
+
+
+a {
+  background: linear-gradient(to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
+	background-position: 0 100%;
+	background-repeat: repeat-x;
+	background-size: 3px 3px;
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ec008c' stroke-width='1' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: 0 100%;
+  background-size: auto 3px; /* Adjusted thickness to 50% */
+  background-repeat: repeat-x;
   text-decoration: none;
 }

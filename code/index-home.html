@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="/css/demo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel = "stylesheet" href = "https://fonts.gstatic.com/s/e/notoemoji/latest/1f44b/lottie.json">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-R7w7i8IyGY5Ck3X1daJc/Ekf4Okp+R/OLCyyFmZ+XbOL+WkfDjdL4By6xR2LFj7bDzqeo7UpvOvm3qXunCJsXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     
     
 
@@ -71,22 +73,19 @@
     <main>
         <div class="row">
             <div class="box-top-content-sem">
-                WHICH <span>SEMESTER</span><BR>resources do you need? 
+                Which <span>SEMESTER</span> resources do you need? 
             </div>
-            <form id="redirectForm" action="index-main1.html" method="GET">
                 <div class="box">
-                    <div class="content" href="/index-firstsem.html">
+                    <button class="content1" onclick="location.href='/index-firstsem.html'">
                         SEMESTER 1
-                    </div>
+                    </button>
                     <div class="divider"></div>
-                    <div class="content">
+                    <button class="content2">
                         SEMESTER 2
-                    </div>
+                    </button>
                 </div>
                 
                 <input type="hidden" id="course" name="course"> 
-                <!-- end of form -->
-            </form>
         </div>
         <header>
         </header>
@@ -94,29 +93,35 @@
             <div class="wa-community-desc" style="padding: 10px; margin: 10px; display: inline-block;">
 
                 <!-- description of the WhatsApp community -->
-                <p>Join the Whatsapp Community to stay updated on the latest updates!</p>
+                <p> &nbsp</p>
 
                 <!-- button to join the WhatsApp community -->
-                <a href="https://chat.whatsapp.com/E83ti5QRmmFDI5153G5lM1" class="btn btn--whatsapp" style="cursor: pointer; color: green; text-decoration: none;">
+                <!-- <a href="https://chat.whatsapp.com/E83ti5QRmmFDI5153G5lM1" class="btn btn--whatsapp" style="cursor: pointer; color: green; text-decoration: none;"> -->
 
                     <!-- text inside the button -->
-                    <span style="transition: text-shadow 0.2s ease-in-out;">Join Community <i class="fa fa-whatsapp" style="font-size:24px"></i>
-                    </span>
+                    <!-- <span style="transition: text-shadow 0.2s ease-in-out;">Join Community <i class="fa fa-whatsapp" style="font-size:24px"></i>
+                    </span> -->
                 </a>
             </div>
         <br>
         <!-- <div class="home-copyright-index" style="opacity: 0.6; margin: 10px; padding: 5px; display: inline-block;">
             <p>&copy; <a href="httpe://codewavehub.tech">CodeWave Hub</a></p>
         </div> -->
-        <div class="marquee-container">
-            <marquee scrollamount="10" behavior="scroll" direction="left" width="100%">
-            Contribute to the website on <a href="https://github.com/Ufraan/datahub" target="_blank">&#10145; Github</a>
-            </marquee>
+        <div class="survey-form">
+            <button class="sf-btn">Complete a 5 min survey!</button>
         </div>
         <div class="home-copyright-index" style="opacity: 0.6; margin: 10px; padding: 5px; display: inline-block;">
-            <p>&copy; <a href="httpe://codewavehub.tech">CodeWave Hub</a></p>
+            <p>&copy; <a href="httpe://codewavehub.tech"><b>CodeWave Hub</b></a></p>
         </div>
+        <p class="contribute-text">Click 
+            <a href="https://github.com/Ufraan/datahub" target="_blank">
+                here
+            </a>
+            
+            to contribute to the project <i class="fa fa-github" aria-hidden="true"></i>.</p>
+
     </main> <!-- ending main -->
+
 
 
 
@@ -140,13 +145,59 @@
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
     <script>
-       
         window.onload = function() {
             document.addEventListener('contextmenu', function(e) {
                 e.preventDefault();
                 alert("Right-click is disabled on this page.");
             });
         };
+
+        
+        class ButtonHover {
+  constructor(selector) {
+    this.button = document.querySelector(selector);
+    this.elWidth = 0;
+    this.elHeight = 0;
+    this.cursorX = 0;
+    this.cursorY = 0;
+    this.elCenterX = 0;
+    this.elCenterY = 0;
+    this.init();
+  }
+
+  init() {
+    this.elWidth = this.button.offsetWidth;
+    this.elHeight = this.button.offsetHeight;
+    this.button.addEventListener('mousemove', e => this.animate(e));
+  }
+
+  animate(e) {
+    let cord = e.target.getBoundingClientRect();
+    this.cursorX = e.x;
+    this.cursorY = e.y;
+    this.elCenterX = cord.left + (cord.width / 2);
+    this.elCenterY = cord.top + (cord.height / 2);
+    let y = this.elCenterY - this.cursorY;
+    let x = this.elCenterX - this.cursorX;
+
+    let theta = Math.atan2(y, x);
+    let angle = theta * 180 / Math.PI - 90;
+    if (angle < 0) {
+      angle = angle + 360;
+    }
+
+    this.button.style.transform = 'translateX(' + (-x * 0.05) + 'px) rotateX(' + (-y * 0.1) + 'deg) rotateY(' + (x * 0.1) + 'deg)';
+    this.button.style.boxShadow = x * 0.2 + "px " + y * 0.3 + "px 28px rgba(0,0,0,0.25)";
+  }
+}
+
+const buttonHoverContent1 = new ButtonHover('.content1');
+const buttonHoverContent2 = new ButtonHover('.content2');
+const buttonHoverContent3 = new ButtonHover('.sf-btn');
+
+
+
+
 
     </script>
 
