@@ -938,7 +938,7 @@ textarea {
   grid-template-columns: 1fr auto 1fr;
   gap: 10px;
   width: 100%;
-  max-width: 1000px;
+  max-width: 700px;
   margin: auto;
 }
 
@@ -1107,6 +1107,11 @@ button:active {
   .circle {
     display: none;
   }
+  .content {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 3px;
+  }
 }
 
 .grid-item button:hover + .circle {
@@ -1171,6 +1176,30 @@ html, body {
 .row .box .content:hover {
   text-shadow: white 0px 0px 10px; 
   cursor: pointer;
-  
+
 }
 
+.box-top-content-sem {
+  margin-bottom: 30px;
+  margin-top: -10px;
+  font-size: 3rem;
+}
+
+.box-top-content-sem span {
+  color: #ec008c;
+  opacity: 0.5;
+}
+.marquee-container {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  width: 100%;
+}
+
+.marquee {
+  width: 100%;
+}
+
+.marquee a {
+  text-decoration: none;
+}
