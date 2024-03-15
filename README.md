@@ -17,7 +17,7 @@ DataHub LIET is a centralized platform designed to streamline access to academic
 
 ## Getting Started
 
-To get started with DataHub LIET, simply visit [DataHub LIET](https://ufraan.github.io/datahub/) and start exploring the available resources. You may browse through the categories or use the search feature to find specific materials. If you encounter any issues or have feedback, feel free to reach out to the administrators for assistance.
+To get started with DataHub LIET, simply visit [DataHub LIET](https://ufraan.github.io/datahub/index-home.html) and start exploring the available resources. You may browse through the categories or use the search feature to find specific materials. If you encounter any issues or have feedback, feel free to reach out to the administrators for assistance.
 
 ## Contributing
 
