@@ -32,7 +32,7 @@ If you have any questions, feedback, or concerns, please don't hesitate to conta
 
 <!--                                License       -->
 ## License
-This repositry is uder MIT License. By contributing, you agree that your contributions will be licensed under its <a href="https://github.com/abdulvasay-234/datahub/blob/main/LICENSE"> MIT License.</a>
+This reposiotry is uder MIT License. By contributing, you agree that your contributions will be licensed under its <a href="https://github.com/abdulvasay-234/datahub/blob/main/LICENSE"> MIT License.</a>
 
 
 <!--                            contributers    -->
