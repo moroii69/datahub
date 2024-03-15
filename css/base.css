@@ -1321,11 +1321,6 @@ body {
   margin: 15px;
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  width: calc(100% - 70px); 
-}
 
 .grid-item {
   flex: 0 0 calc(50% - 40px); 
@@ -1349,3 +1344,56 @@ body {
 }
 
 
+.small-text {
+  font-size: 12px; 
+  display: block;
+  padding: 5px 2px;
+  margin: 2px;
+}
+
+
+.box-top-content-sem-group {
+  margin-bottom: 30px;
+  margin-top: -10px;
+  font-size: 3rem;
+}
+
+.box-top-content-sem-group span {
+  color: #ec008c;
+  opacity: 0.5;
+}
+
+.box-top-content-sem-group {
+  margin: 20px;
+  padding: 20px;
+}
+
+.row-group {
+  margin: 15px;
+  padding: 15px;
+}
+
+.container-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.row-group {
+  text-align: center;
+}
+
+
+.row-group .box .content1 {
+  margin-right: 20px;
+}
+
+.row-group .box .content2 {
+  margin-left: 20px;
+}
+
+
+.box-top-content-sem-group  {
+  font-size: 4.3rem;
+}
