@@ -1309,3 +1309,43 @@ a:hover {
   background-repeat: repeat-x;
   text-decoration: none;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100% - 70px); 
+}
+
+.grid-item {
+  flex: 0 0 calc(50% - 40px); 
+  margin: 20px; 
+  padding: 20px; 
+  box-sizing: border-box;
+  border: 2px solid;
+}
+
+.grid-item:nth-child(1) { border-color: red; }
+.grid-item:nth-child(2) { border-color: blue; }
+.grid-item:nth-child(3) { border-color: green; }
+.grid-item:nth-child(4) { border-color: yellow; }
+.grid-item:nth-child(5) { border-color: orange; }
+.grid-item:nth-child(6) { border-color: purple; }
+
+@media (max-width: 600px) {
+  .grid-item {
+    flex: 0 0 calc(100% - 40px);
+  }
+}
+
+

@@ -161,19 +161,3 @@ var initializeFinalCountdown = function() {
 
 })(jQuery);
 
-// buttons on index.html submit sc
-function submitForm(course) {
-    var form = document.getElementById('redirectForm');
-    var action = 'index-main2.html';
-
-    if (course === 'Civil Engineering' || course === 'Mechanical Engineering' || course === 'Computer Science Engineering' || course === 'Computer Science - DS') {
-        action = 'index-main1.html';
-    }
-
-    form.action = action;
-
-    document.getElementById('course').value = course;
-
-    // Submit the form
-    form.submit();
-}
