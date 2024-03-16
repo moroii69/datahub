@@ -1217,7 +1217,7 @@ html, body {
 
 
 .survey-form {
-  margin-top: -80px;
+  margin-top: -170px;
   padding-bottom: 8px;
 
 }
@@ -1281,10 +1281,11 @@ html, body {
 
 .home-copyright-index {
   position: fixed;
-  bottom: 10px;
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
   padding: 10px;
+  padding-bottom: 50px;
 }
 
 
