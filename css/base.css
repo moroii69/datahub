@@ -1025,7 +1025,7 @@ button:active {
   }
 
 .grid-item h2:hover {
-  text-shadow: rgb(255, 255, 255) 0px 0px 10px;
+  text-shadow: rgb(255, 0, 149) 0px 0px 10px;
 }
 
 .grid-item button {
@@ -1398,4 +1398,5 @@ body {
 .box-top-content-sem-group  {
   font-size: 4.3rem;
 }
+
 
