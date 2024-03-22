@@ -1006,10 +1006,10 @@ button:active {
 
 .grid-item {
   padding-bottom: 20px;
-  border: 1px solid #ec008c; 
+  /* border: 1px solid #ec008c;  */
   height: 500px;
   width: 400px;
-  box-shadow: #ec008c 0px 0px 10px;
+  /* box-shadow: #ec008c 0px 0px 10px; */
 }
 
 .grid-item h2 {
@@ -1331,12 +1331,12 @@ body {
   border: 2px solid;
 }
 
-.grid-item:nth-child(1) { border-color: red; }
+/* .grid-item:nth-child(1) { border-color: red; }
 .grid-item:nth-child(2) { border-color: blue; }
 .grid-item:nth-child(3) { border-color: green; }
 .grid-item:nth-child(4) { border-color: yellow; }
 .grid-item:nth-child(5) { border-color: orange; }
-.grid-item:nth-child(6) { border-color: purple; }
+.grid-item:nth-child(6) { border-color: purple; } */
 
 @media (max-width: 600px) {
   .grid-item {
@@ -1398,3 +1398,4 @@ body {
 .box-top-content-sem-group  {
   font-size: 4.3rem;
 }
+
