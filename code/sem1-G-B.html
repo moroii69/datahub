@@ -43,54 +43,77 @@
                     <div class="main-content-centre-sec">
                         <div class="grid-container">
                             <div class="grid-item">
+                                <!-- container for grid item -->
                                 <h2>Question Banks</h2>
+                                <!-- heading for the section -->
                                 <button class="common-btn" onclick="openPDF('mathematics')">Mathematics 1</button>
+                                <!-- button for mathematics 1, triggers openpdf function with 'mathematics' argument -->
                                 <button class="common-btn" onclick="openPDF('environmental')">Environmental Sciences</button>
+                                <!-- button for environmental sciences, triggers openpdf function with 'environmental' argument -->
                                 <button class="common-btn" onclick="openPDF('engineering')">Engineering Physics</button>
+                                <!-- button for engineering physics, triggers openpdf function with 'engineering' argument -->
                                 <button class="common-btn" onclick="openPDF('human_values')">Universal Human Values</button>
+                                <!-- button for universal human values, triggers openpdf function with 'human_values' argument -->
                                 <button class="common-btn" onclick="openPDF('programming')">Programming for Problem Solving</button>
+                                <!-- button for programming for problem solving, triggers openpdf function with 'programming' argument -->
                             </div>
                             
                             <script>
                                 function openPDF(subject) {
+                                    // function to open pdf files based on the subject provided
                                     var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+                                    // checking if the user is on a mobile device
                                     var pdfPath;
-                            
+                                    // variable to hold the path of the pdf file
+                                    
                                     switch (subject) {
                                         case 'mathematics':
                                             pdfPath = "../data/sem1/group2/question_banks/m1/m1-qb.pdf";
                                             break;
+                                        // assigning the pdf path for mathematics 1
                                         case 'environmental':
                                             pdfPath = "../data/sem1/group2/question_banks/es/es-qb.pdf";
                                             break;
+                                        // assigning the pdf path for environmental sciences
                                         case 'engineering':
                                             pdfPath = "../data/sem1/group2/question_banks/ep/ep-qb.pdf";
                                             break;
+                                        // assigning the pdf path for engineering physics
                                         case 'human_values':
                                             pdfPath = "../data/sem1/group2/question_banks/uhv/uhv-qb.pdf";
                                             break;
+                                        // assigning the pdf path for universal human values
                                         case 'programming':
                                             pdfPath = "../data/sem1/group2/question_banks/pps/pps-qb.pdf";
                                             break;
+                                        // assigning the pdf path for programming for problem solving
                                         default:
                                             pdfPath = "";
                                             break;
+                                        // default case for any other subject, setting an empty path
                                     }
-                            
+                                    
                                     if (isMobile) {
-                                        // for mobile devices, initiating the download directly
+                                        // check if the user is on a mobile device
                                         var link = document.createElement('a');
+                                        // creating a new link element
                                         link.href = pdfPath;
+                                        // setting the href attribute of the link to the pdf path
                                         link.download = 'question_bank.pdf';
+                                        // setting the download attribute to initiate a download
                                         link.click();
+                                        // programmatically clicking the link to initiate the download
                                     } else {
-                                        // for desktops, open the pdf in a new tab
+                                        // if not on mobile device
                                         window.open(pdfPath, "_blank");
+                                        // opening the pdf in a new tab
                                     }
                                 }
                             </script>
                             
+                            
                             <div class="grid-item">
+                                <!-- section for cie 1 question papers -->
                                 <h2>CIE 1 Question Papers</h2>
                                 <button class="common-btn">Mathematics 1</button>
                                 <button class="common-btn">Environmental Sciences</button>
@@ -98,7 +121,9 @@
                                 <button class="common-btn">Universal Human Values</button>
                                 <button class="common-btn">Programming for Problem Solving</button>
                             </div>
+                            
                             <div class="grid-item">
+                                <!-- section for cie 2 question papers -->
                                 <h2>CIE 2 Question Papers</h2>
                                 <button class="common-btn">Mathematics 1</button>
                                 <button class="common-btn">Environmental Sciences</button>
@@ -106,7 +131,9 @@
                                 <button class="common-btn">Universal Human Values</button>
                                 <button class="common-btn">Programming for Problem Solving</button>
                             </div>
+                            
                             <div class="grid-item">
+                                <!-- section for see question papers -->
                                 <h2>SEE Question Papers</h2>
                                 <button class="common-btn">Mathematics 1</button>
                                 <button class="common-btn">Environmental Sciences</button>
@@ -114,7 +141,9 @@
                                 <button class="common-btn">Universal Human Values</button>
                                 <button class="common-btn">Programming for Problem Solving</button>
                             </div>
+                            
                             <div class="grid-item">
+                                <!-- section for pre final question papers -->
                                 <h2>Pre Final Question Papers</h2>
                                 <button class="common-btn">Mathematics 1</button>
                                 <button class="common-btn">Environmental Sciences</button>
@@ -122,12 +151,15 @@
                                 <button class="common-btn">Universal Human Values</button>
                                 <button class="common-btn">Programming for Problem Solving</button>
                             </div>
+                            
                             <div class="grid-item">
+                                <!-- section for lab manuals -->
                                 <h2>Lab Manuals</h2>
                                 <button class="common-btn">Design Thinking Lab</button>
                                 <button class="common-btn">Engineering Graphics &amp; Design Practice</button>
                                 <button class="common-btn">Programming for Problem Solving Lab</button>
                             </div>
+                            
                         </div>
                     
                     </div>
@@ -138,12 +170,18 @@
         </header>
             
         <br>
-        <p class="contribute-text">Click 
+        <!-- opening paragraph tag with class attribute -->
+        <p class="contribute-text">click 
+            <!-- anchor tag with hyperlink and target attribute -->
             <a href="https://github.com/Ufraan/datahub" target="_blank">
                 here
             </a>
-            to contribute to the project <i class="fa fa-github" aria-hidden="true"></i>.
-        </p>
+            <!-- text to prompt user to contribute -->
+            to contribute to the project 
+            <!-- italicized font-awesome icon for GitHub -->
+            <i class="fa fa-github" aria-hidden="true"></i>.
+        </p> <!-- closing paragraph tag -->
+
     </main> <!-- ending main -->
 
 
@@ -170,12 +208,17 @@
     <script>
         
 
+        // when the window is loaded, this function is executed.
         window.onload = function() {
+            // adding an event listener for the 'contextmenu' event which is triggered when the user right-clicks.
             document.addEventListener('contextmenu', function(e) {
+                // preventing the default behavior of the right-click event, which would usually display the browser context menu.
                 e.preventDefault();
+                // alerting the user that right-clicking is disabled on this page.
                 alert("Right-click is disabled on this page.");
             });
         };
+
 
 
 
