@@ -44,12 +44,56 @@
                         <div class="grid-container">
                             <div class="grid-item">
                                 <h2>Question Banks</h2>
-                                <button class="common-btn">Mathematics 1</button>
-                                <button class="common-btn">Environmental Sciences</button>
-                                <button class="common-btn">Engineering Physics</button>
-                                <button class="common-btn">Universal Human Values</button>
-                                <button class="common-btn">Programming for Problem Solving</button>
+                                <button class="common-btn" onclick="openPDF('mathematics')">Mathematics 1</button>
+                                <button class="common-btn" onclick="openPDF('environmental')">Environmental Sciences</button>
+                                <button class="common-btn" onclick="openPDF('engineering')">Engineering Physics</button>
+                                <button class="common-btn" onclick="openPDF('human_values')">Universal Human Values</button>
+                                <button class="common-btn" onclick="openPDF('programming')">Programming for Problem Solving</button>
                             </div>
+                            
+                            <script>
+                                function openPDF(subject) {
+                                    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+                                    var pdfPath;
+                            
+                                    switch (subject) {
+                                        case 'mathematics':
+                                            pdfPath = "../data/sem1/group2/question_banks/m1/m1-qb.pdf";
+                                            break;
+                                        case 'environmental':
+                                            pdfPath = "../data/sem1/group2/question_banks/es/es-qb.pdf";
+                                            break;
+                                        case 'engineering':
+                                            pdfPath = "../data/sem1/group2/question_banks/ep/ep-qb.pdf";
+                                            break;
+                                        case 'human_values':
+                                            pdfPath = "../data/sem1/group2/question_banks/uhv/uhv-qb.pdf";
+                                            break;
+                                        case 'programming':
+                                            pdfPath = "../data/sem1/group2/question_banks/pps/pps-qb.pdf";
+                                            break;
+                                        default:
+                                            pdfPath = "";
+                                            break;
+                                    }
+                            
+                                    if (isMobile) {
+                                        // for mobile devices, initiating the download directly
+                                        var link = document.createElement('a');
+                                        link.href = pdfPath;
+                                        link.download = 'question_bank.pdf';
+                                        link.click();
+                                    } else {
+                                        // for desktops, open the pdf in a new tab
+                                        window.open(pdfPath, "_blank");
+                                    }
+                                }
+                            </script>
+                            
+                            
+                            
+                            
+                            
                             <div class="grid-item">
                                 <h2>CIE 1 Question Papers</h2>
                                 <button class="common-btn">Mathematics 1</button>
