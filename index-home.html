@@ -143,7 +143,13 @@
             </div>
         </div>
     </div>
-
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">X</span>
+            <h2>This website is best viewed on a desktop/laptop.</h2>
+            <p>Please switch to a larger screen for the best experience.</p>
+        </div>
+    </div>
     <!-- Java Script
     ================================================== -->
     <script src="js/jquery-3.2.1.min.js"></script>
@@ -162,6 +168,15 @@
         };
 
     </script>
+    <script>
+        function closePopup() {
+            document.getElementById("popupOverlay").style.display = "none";
+        }
+        window.onload = function() {
+            document.getElementById("popupOverlay").style.display = "block";
+        };
+</script>
+
 
 </body>
 
