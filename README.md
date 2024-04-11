@@ -24,7 +24,7 @@ An open-source project: contribute suggestions or improvements via pull requests
 
 ## Contact Us
 
-- Email: [ufraanmohammed@gmail.com](mailto:ufraanmohammed@gmail.com)
+- Email: [kurosen930@gmail.com](mailto:kurosen930@gmail.com)
 
 ## License
 
