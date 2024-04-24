@@ -44,12 +44,65 @@
                         <div class="grid-container">
                             <div class="grid-item">
                                 <h2>Question Banks</h2>
-                                <button class="common-btn">Indian Constitution</button>
-                                <button class="common-btn">Mathematics - II</button>
-                                <button class="common-btn">Engineering Chemistry</button>
-                                <button class="common-btn">Basic Electric Engineering</button>
-                                <button class="common-btn">English for Professional Communication</button>
+                                <button class="common-btn" onclick="openPDF('constitution')">Indian Constitution</button>
+                                <button class="common-btn" onclick="openPDF('math_2')">Mathematics - II</button>
+                                <button class="common-btn" onclick="openPDF('chemistry')">Engineering Chemistry</button>
+                                <button class="common-btn" onclick="openPDF('electric_engineering')">Basic Electric Engineering</button>
+                                <button class="common-btn" onclick="openPDF('english')">English for Professional Communication</button>
                             </div>
+                            
+                            <script>
+                                function openPDF(subject) {
+                                    // function to open pdf files based on the subject provided
+                                    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+                                    // checking if the user is on a mobile device
+                                    var pdfPath;
+                                    // variable to hold the path of the pdf file
+                                    
+                                    switch (subject) {
+                                        case 'constitution':
+                                            pdfPath = "../data/sem2/group2/question_banks/ic-qb.pdf";
+                                            break;
+                                        // assigning the pdf path for Indian Constitution
+                                        case 'math_2':
+                                            pdfPath = "../data/sem2/group2/question_banks/m2-qb.pdf";
+                                            break;
+                                        // assigning the pdf path for Mathematics - II
+                                        case 'chemistry':
+                                            pdfPath = "../data/sem2/group2/question_banks/ec-qb.pdf";
+                                            break;
+                                        // assigning the pdf path for Engineering Chemistry
+                                        case 'electric_engineering':
+                                            pdfPath = "../data/sem2/group2/question_banks/bee-qb.pdf";
+                                            break;
+                                        // assigning the pdf path for Basic Electric Engineering
+                                        case 'english':
+                                            pdfPath = "../data/sem2/group2/question_banks/epc-qb.pdf";
+                                            break;
+                                        // assigning the pdf path for English for Professional Communication
+                                        default:
+                                            pdfPath = "";
+                                            break;
+                                        // default case for any other subject, setting an empty path
+                                    }
+                                    
+                                    if (isMobile) {
+                                        // check if the user is on a mobile device
+                                        var link = document.createElement('a');
+                                        // creating a new link element
+                                        link.href = pdfPath;
+                                        // setting the href attribute of the link to the pdf path
+                                        link.download = 'question_bank.pdf';
+                                        // setting the download attribute to initiate a download
+                                        link.click();
+                                        // programmatically clicking the link to initiate the download
+                                    } else {
+                                        // if not on mobile device
+                                        window.open(pdfPath, "_blank");
+                                        // opening the pdf in a new tab
+                                    }
+                                }
+                            </script>
                             <div class="grid-item">
                                 <h2>CIE 1 Question Papers</h2>
                                 <button class="common-btn">Indian Constitution</button>
