@@ -111,55 +111,320 @@
                                 }
                             </script>
                             
-                            
                             <div class="grid-item">
                                 <!-- section for cie 1 question papers -->
                                 <h2>CIE 1 Question Papers</h2>
-                                <button class="common-btn">Mathematics 1</button>
-                                <button class="common-btn">Environmental Sciences</button>
-                                <button class="common-btn">Engineering Physics</button>
-                                <button class="common-btn">Universal Human Values</button>
-                                <button class="common-btn">Programming for Problem Solving</button>
+                                <button class="common-btn" onclick="openPDFCIE1('mathematics_cie1')">Mathematics 1</button>
+                                <!-- button for mathematics 1, triggers openpdf function with 'mathematics' argument -->
+                                <button class="common-btn" onclick="openPDFCIE1('environmental_cie1')">Environmental Sciences</button>
+                                <!-- button for environmental sciences, triggers openpdf function with 'environmental' argument -->
+                                <button class="common-btn" onclick="openPDFCIE1('physics_cie1')">Engineering Physics</button>
+                                <!-- button for engineering physics, triggers openpdf function with 'engineering' argument -->
+                                <button class="common-btn" onclick="openPDFCIE1('human_values_cie1')">Universal Human Values</button>
+                                <!-- button for universal human values, triggers openpdf function with 'human_values' argument -->
+                                <button class="common-btn" onclick="openPDFCIE1('programming_cie1')">Programming for Problem Solving</button>
+                                <!-- button for programming for problem solving, triggers openpdf function with 'programming' argument -->
                             </div>
+                            
+                            <script>
+                                function openPDFCIE1(subject) {
+                                    // function to open pdf files based on the subject provided
+                                    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+                                    // checking if the user is on a mobile device
+                                    var pdfPath;
+                                    // variable to hold the path of the pdf file
+                                    
+                                    switch (subject) {
+                                        case 'mathematics_cie1':
+                                            pdfPath = "../data/sem1/group2/cie1_qp/cie1-m1-qp.pdf";
+                                            break;
+                                        // assigning the pdf path for Mathematics - I
+                                        case 'environmental_cie1':
+                                            pdfPath = "../data/sem1/group2/cie1_qp/cie1-es-qp.pdf";
+                                            break;
+                                        // assigning the pdf path for Environmental Sciences
+                                        case 'physics_cie1':
+                                            pdfPath = "../data/sem1/group2/cie1_qp/cie1-ep-qp.pdf";
+                                            break;
+                                        // assigning the pdf path for Engineering Physics
+                                        case 'human_values_cie1':
+                                            pdfPath = "../data/sem1/group2/cie1_qp/cie1-uhv-qp.pdf";
+                                            break;
+                                        // assigning the pdf path for Universal Human Values
+                                        case 'programming_cie1':
+                                            pdfPath = "../data/sem1/group2/cie1_qp/cie1-pps-qp.pdf";
+                                            break;
+                                        // assigning the pdf path for Programming for Problem Solving
+                                        default:
+                                            pdfPath = "";
+                                            break;
+                                        // default case for any other subject, setting an empty path
+                                    }
+                                    
+                                    if (isMobile) {
+                                        // check if the user is on a mobile device
+                                        var link = document.createElement('a');
+                                        // creating a new link element
+                                        link.href = pdfPath;
+                                        // setting the href attribute of the link to the pdf path
+                                        link.download = 'question_bank.pdf';
+                                        // setting the download attribute to initiate a download
+                                        link.click();
+                                        // programmatically clicking the link to initiate the download
+                                    } else {
+                                        // if not on mobile device
+                                        window.open(pdfPath, "_blank");
+                                        // opening the pdf in a new tab
+                                    }
+                                }
+                            </script>
+                            
                             
                             <div class="grid-item">
                                 <!-- section for cie 2 question papers -->
                                 <h2>CIE 2 Question Papers</h2>
-                                <button class="common-btn">Mathematics 1</button>
-                                <button class="common-btn">Environmental Sciences</button>
-                                <button class="common-btn">Engineering Physics</button>
-                                <button class="common-btn">Universal Human Values</button>
-                                <button class="common-btn">Programming for Problem Solving</button>
+                                <button class="common-btn" onclick="openPDFCIE2('mathematics_cie2')">Mathematics 1</button>
+                                <!-- button for mathematics 1, triggers openpdf function with 'mathematics' argument -->
+                                <button class="common-btn" onclick="openPDFCIE2('environmental_cie2')">Environmental Sciences</button>
+                                <!-- button for environmental sciences, triggers openpdf function with 'environmental' argument -->
+                                <button class="common-btn" onclick="openPDFCIE2('physics_cie2')">Engineering Physics</button>
+                                <!-- button for engineering physics, triggers openpdf function with 'engineering' argument -->
+                                <button class="common-btn" onclick="openPDFCIE2('human_values_cie2')">Universal Human Values</button>
+                                <!-- button for universal human values, triggers openpdf function with 'human_values' argument -->
+                                <button class="common-btn" onclick="openPDFCIE2('programming_cie2')">Programming for Problem Solving</button>
+                                <!-- button for programming for problem solving, triggers openpdf function with 'programming' argument -->
                             </div>
                             
+                            <script>
+                                function openPDFCIE2(subject) {
+                                    // function to open pdf files based on the subject provided
+                                    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+                                    // checking if the user is on a mobile device
+                                    var pdfPath;
+                                    // variable to hold the path of the pdf file
+                            
+                                    switch (subject) {
+                                        case 'mathematics_cie2':
+                                            pdfPath = "../data/sem1/group2/cie2_qp/cie2-m1-qp.pdf";
+                                            break;
+                                        // assigning the pdf path for Mathematics - I
+                                        case 'environmental_cie2':
+                                            pdfPath = "../data/sem1/group2/cie2_qp/cie2-es-qp.pdf";
+                                            break;
+                                        // assigning the pdf path for Environmental Sciences
+                                        case 'physics_cie2':
+                                            pdfPath = "../data/sem1/group2/cie2_qp/cie2-ep-qp.pdf";
+                                            break;
+                                        // assigning the pdf path for Engineering Physics
+                                        case 'human_values_cie2':
+                                            pdfPath = "../data/sem1/group2/cie2_qp/cie2-uhv-qp.pdf";
+                                            break;
+                                        // assigning the pdf path for Universal Human Values
+                                        case 'programming_cie2':
+                                            pdfPath = "../data/sem1/group2/cie2_qp/cie2-pps-qp.pdf";
+                                            break;
+                                        // assigning the pdf path for Programming for Problem Solving
+                                        default:
+                                            pdfPath = "";
+                                            break;
+                                        // default case for any other subject, setting an empty path
+                                    }
+                            
+                                    if (isMobile) {
+                                        // check if the user is on a mobile device
+                                        var link = document.createElement('a');
+                                        // creating a new link element
+                                        link.href = pdfPath;
+                                        // setting the href attribute of the link to the pdf path
+                                        link.download = 'question_bank.pdf';
+                                        // setting the download attribute to initiate a download
+                                        link.click();
+                                        // programmatically clicking the link to initiate the download
+                                    } else {
+                                        // if not on mobile device
+                                        window.open(pdfPath, "_blank");
+                                        // opening the pdf in a new tab
+                                    }
+                                }
+                            </script>
+                            
+                            
                             <div class="grid-item">
-                                <!-- section for see question papers -->
+                                <!-- section for SEE question papers -->
                                 <h2>SEE Question Papers</h2>
-                                <button class="common-btn">Mathematics 1</button>
-                                <button class="common-btn">Environmental Sciences</button>
-                                <button class="common-btn">Engineering Physics</button>
-                                <button class="common-btn">Universal Human Values</button>
-                                <button class="common-btn">Programming for Problem Solving</button>
+                                <button class="common-btn" onclick="openPDFSEE('mathematics_see')">Mathematics 1</button>
+                                <!-- button for mathematics 1, triggers openpdf function with 'mathematics' argument -->
+                                <button class="common-btn" onclick="openPDFSEE('environmental_see')">Environmental Sciences</button>
+                                <!-- button for environmental sciences, triggers openpdf function with 'environmental' argument -->
+                                <button class="common-btn" onclick="openPDFSEE('physics_see')">Engineering Physics</button>
+                                <!-- button for engineering physics, triggers openpdf function with 'engineering' argument -->
+                                <button class="common-btn" onclick="openPDFSEE('human_values_see')">Universal Human Values</button>
+                                <!-- button for universal human values, triggers openpdf function with 'human_values' argument -->
+                                <button class="common-btn" onclick="openPDFSEE('programming_see')">Programming for Problem Solving</button>
+                                <!-- button for programming for problem solving, triggers openpdf function with 'programming' argument -->
                             </div>
+                            
+                            <script>
+                                function openPDFSEE(subject) {
+                                    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+                                    var pdfPath;
+                            
+                                    switch (subject) {
+                                        case 'mathematics_see':
+                                            pdfPath = "../data/sem1/group2/see_qp/see-m1-qp.pdf";
+                                            break;
+                                        case 'environmental_see':
+                                            pdfPath = "../data/sem1/group2/see_qp/see-es-qp.pdf";
+                                            break;
+                                        case 'physics_see':
+                                            pdfPath = "../data/sem1/group2/see_qp/see-ep-qp.pdf";
+                                            break;
+                                        case 'human_values_see':
+                                            pdfPath = "../data/sem1/group2/see_qp/see-uhv-qp.pdf";
+                                            break;
+                                        case 'programming_see':
+                                            pdfPath = "../data/sem1/group2/see_qp/see-pps-qp.pdf";
+                                            break;
+                                        default:
+                                            pdfPath = "";
+                                            break;
+                                    }
+                            
+                                    if (isMobile) {
+                                        var link = document.createElement('a');
+                                        link.href = pdfPath;
+                                        link.download = 'question_bank.pdf';
+                                        link.click();
+                                    } else {
+                                        window.open(pdfPath, "_blank");
+                                    }
+                                }
+                            </script>
+                            
                             
                             <div class="grid-item">
-                                <!-- section for pre final question papers -->
+                                <!-- section for prefinal question papers -->
                                 <h2>Pre Final Question Papers</h2>
-                                <button class="common-btn">Mathematics 1</button>
-                                <button class="common-btn">Environmental Sciences</button>
-                                <button class="common-btn">Engineering Physics</button>
-                                <button class="common-btn">Universal Human Values</button>
-                                <button class="common-btn">Programming for Problem Solving</button>
+                                <button class="common-btn" onclick="openPDFPF('mathematics_pf')">Mathematics 1</button>
+                                <!-- button for mathematics 1, triggers openpdf function with 'mathematics' argument -->
+                                <button class="common-btn" onclick="openPDFPF('environmental_pf')">Environmental Sciences</button>
+                                <!-- button for environmental sciences, triggers openpdf function with 'environmental' argument -->
+                                <button class="common-btn" onclick="openPDFPF('physics_pf')">Engineering Physics</button>
+                                <!-- button for engineering physics, triggers openpdf function with 'engineering' argument -->
+                                <button class="common-btn" onclick="openPDFPF('human_values_pf')">Universal Human Values</button>
+                                <!-- button for universal human values, triggers openpdf function with 'human_values' argument -->
+                                <button class="common-btn" onclick="openPDFPF('programming_pf')">Programming for Problem Solving</button>
+                                <!-- button for programming for problem solving, triggers openpdf function with 'programming' argument -->
                             </div>
                             
+                            <script>
+                                function openPDFPF(subject) {
+                                    // function to open pdf files based on the subject provided
+                                    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+                                    // checking if the user is on a mobile device
+                                    var pdfPath;
+                                    // variable to hold the path of the pdf file
+                                    
+                                    switch (subject) {
+                                        case 'mathematics_pf':
+                                            pdfPath = "../data/sem1/group2/pf_qp/pf-m1-qp.pdf";
+                                            break;
+                                        // assigning the pdf path for Mathematics - I
+                                        case 'environmental_pf':
+                                            pdfPath = "../data/sem1/group2/pf_qp/pf-es-qp.pdf";
+                                            break;
+                                        // assigning the pdf path for Environmental Sciences
+                                        case 'physics_pf':
+                                            pdfPath = "../data/sem1/group2/pf_qp/pf-ep-qp.pdf";
+                                            break;
+                                        // assigning the pdf path for Engineering Physics
+                                        case 'human_values_pf':
+                                            pdfPath = "../data/sem1/group2/pf_qp/pf-uhv-qp.pdf";
+                                            break;
+                                        // assigning the pdf path for Universal Human Values
+                                        case 'programming_pf':
+                                            pdfPath = "../data/sem1/group2/pf_qp/pf-pps-qp.pdf";
+                                            break;
+                                        // assigning the pdf path for Programming for Problem Solving
+                                        default:
+                                            pdfPath = "";
+                                            break;
+                                        // default case for any other subject, setting an empty path
+                                    }
+                                    
+                                    if (isMobile) {
+                                        // check if the user is on a mobile device
+                                        var link = document.createElement('a');
+                                        // creating a new link element
+                                        link.href = pdfPath;
+                                        // setting the href attribute of the link to the pdf path
+                                        link.download = 'question_bank.pdf';
+                                        // setting the download attribute to initiate a download
+                                        link.click();
+                                        // programmatically clicking the link to initiate the download
+                                    } else {
+                                        // if not on mobile device
+                                        window.open(pdfPath, "_blank");
+                                        // opening the pdf in a new tab
+                                    }
+                                }
+                            </script>
+                            
+
                             <div class="grid-item">
                                 <!-- section for lab manuals -->
                                 <h2>Lab Manuals</h2>
-                                <button class="common-btn">Design Thinking Lab</button>
-                                <button class="common-btn">Engineering Graphics &amp; Design Practice</button>
-                                <button class="common-btn">Programming for Problem Solving Lab</button>
+                                <button class="common-btn" onclick="openPDFLM('dt_lm')">Design Thinking Lab</button>
+                                <!-- button for dt LAB, triggers openpdf function with 'mathematics' argument -->
+                                <button class="common-btn" onclick="openPDFLM('egdp_lm')">Engineering Graphics &amp; Design Practice</button>
+                                <!-- button for EGDP, triggers openpdf function with 'EGDP' argument -->
+                                <button class="common-btn" onclick="openPDFLM('pps_lm')">Programming for Problem Solving Lab</button>
+                                <!-- button for PPS, triggers openpdf function with 'pps' argument -->
                             </div>
                             
+                            <script>
+                                function openPDFLM(subject) {
+                                    // function to open pdf files based on the subject provided
+                                    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+                                    // checking if the user is on a mobile device
+                                    var pdfPath;
+                                    // variable to hold the path of the pdf file
+                                    
+                                    switch (subject) {
+                                        case 'dt_lm':
+                                            pdfPath = "../data/sem1/group2/lab_manuals/dt-lm.pdf";
+                                            break;
+                                        // assigning the pdf path for Design Thinking Lab
+                                        case 'egdp_lm':
+                                            pdfPath = "../data/sem1/group2/lab_manuals/egdp-lm.pdf";
+                                            break;
+                                        // assigning the pdf path for Engineering Graphics & Design Practice
+                                        case 'pps_lm':
+                                            pdfPath = "../data/sem1/group2/lab_manuals/pps-lm.pdf";
+                                            break;
+                                        default:
+                                            pdfPath = "";
+                                            break;
+                                        // default case for any other subject, setting an empty path
+                                    }
+                                    
+                                    if (isMobile) {
+                                        // check if the user is on a mobile device
+                                        var link = document.createElement('a');
+                                        // creating a new link element
+                                        link.href = pdfPath;
+                                        // setting the href attribute of the link to the pdf path
+                                        link.download = 'question_bank.pdf';
+                                        // setting the download attribute to initiate a download
+                                        link.click();
+                                        // programmatically clicking the link to initiate the download
+                                    } else {
+                                        // if not on mobile device
+                                        window.open(pdfPath, "_blank");
+                                        // opening the pdf in a new tab
+                                    }
+                                }
+                            </script>
                         </div>
                     
                     </div>
