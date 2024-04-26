@@ -305,7 +305,7 @@
                             <div class="grid-item">
                                 <!-- section for prefinal question papers -->
                                 <h2>Pre Final Question Papers</h2>
-                                <button class="common-btn" onclick="openPDFPF('mathematics_pf')">Mathematics 1</button>
+                                <button class="common-btn" onclick="openPDFPF('mathematics_pf')">&nbsp; Mathematics 1 &nbsp;</button>
                                 <!-- button for mathematics 1, triggers openpdf function with 'mathematics' argument -->
                                 <button class="common-btn" onclick="openPDFPF('environmental_pf')">Environmental Sciences</button>
                                 <!-- button for environmental sciences, triggers openpdf function with 'environmental' argument -->
@@ -333,29 +333,29 @@
                                         case 'environmental_pf':
                                             pdfPath = "../data/sem1/group2/pf_qp/pf-es-qp.pdf";
                                             break;
-                                        // assigning the pdf path for Environmental Sciences
+                                        // assigning the pdf path for ES
                                         case 'physics_pf':
                                             pdfPath = "../data/sem1/group2/pf_qp/pf-ep-qp.pdf";
                                             break;
-                                        // assigning the pdf path for Engineering Physics
+                                        // assigning the pdf path for EP
                                         case 'human_values_pf':
                                             pdfPath = "../data/sem1/group2/pf_qp/pf-uhv-qp.pdf";
                                             break;
-                                        // assigning the pdf path for Universal Human Values
+                                        // assigning the pdf path for UHV
                                         case 'programming_pf':
                                             pdfPath = "../data/sem1/group2/pf_qp/pf-pps-qp.pdf";
                                             break;
-                                        // assigning the pdf path for Programming for Problem Solving
+                                        // assigning the pdf path for PPS
                                         default:
                                             pdfPath = "";
                                             break;
-                                        // default case for any other subject, setting an empty path
+                                        // default case for any other subject, an empty path is set
                                     }
                                     
                                     if (isMobile) {
                                         // check if the user is on a mobile device
                                         var link = document.createElement('a');
-                                        // creating a new link element
+                                        // create a new link element
                                         link.href = pdfPath;
                                         // setting the href attribute of the link to the pdf path
                                         link.download = 'question_bank.pdf';
@@ -375,10 +375,10 @@
                                 <!-- section for lab manuals -->
                                 <h2>Lab Manuals</h2>
                                 <button class="common-btn" onclick="openPDFLM('dt_lm')">Design Thinking Lab</button>
-                                <!-- button for dt LAB, triggers openpdf function with 'mathematics' argument -->
+                                <!-- button for DT Lab, triggers openpdf function with 'DT Lab' argument -->
                                 <button class="common-btn" onclick="openPDFLM('egdp_lm')">Engineering Graphics &amp; Design Practice</button>
                                 <!-- button for EGDP, triggers openpdf function with 'EGDP' argument -->
-                                <button class="common-btn" onclick="openPDFLM('pps_lm')">Programming for Problem Solving Lab</button>
+                                <button class="common-btn" onclick="openPDFLM('pps_lm')">Programming for Problem Solving</button>
                                 <!-- button for PPS, triggers openpdf function with 'pps' argument -->
                             </div>
                             
