@@ -105,49 +105,51 @@
                             </script>
                             <div class="grid-item">
                                 <h2>CIE 1 Question Papers</h2>
-                                <button class="common-btn">Indian Constitution</button>
-                                <button class="common-btn">Mathematics - II</button>
-                                <button class="common-btn">Engineering Chemistry</button>
-                                <button class="common-btn">Basic Electric Engineering</button>
-                                <button class="common-btn">English for Professional Communication</button>
+                                <button class="common-btn" onclick="showPopup()">Indian Constitution</button>
+                                <button class="common-btn" onclick="showPopup()">Mathematics - II</button>
+                                <button class="common-btn" onclick="showPopup()">Engineering Chemistry</button>
+                                <button class="common-btn" onclick="showPopup()">Basic Electric Engineering</button>
+                                <button class="common-btn" onclick="showPopup()">English for Professional Communication</button>
                             </div>
                             <div class="grid-item">
                                 <h2>CIE 2 Question Papers</h2>
-                                <button class="common-btn">Indian Constitution</button>
-                                <button class="common-btn">Mathematics - II</button>
-                                <button class="common-btn">Engineering Chemistry</button>
-                                <button class="common-btn">Basic Electric Engineering</button>
-                                <button class="common-btn">English for Professional Communication</button>
+                                <button class="common-btn" onclick="showPopup()">Indian Constitution</button>
+                                <button class="common-btn" onclick="showPopup()">Mathematics - II</button>
+                                <button class="common-btn" onclick="showPopup()">Engineering Chemistry</button>
+                                <button class="common-btn" onclick="showPopup()">Basic Electric Engineering</button>
+                                <button class="common-btn" onclick="showPopup()">English for Professional Communication</button>
                             </div>
                             <div class="grid-item">
                                 <h2>SEE Question Papers</h2>
-                                <button class="common-btn">Indian Constitution</button>
-                                <button class="common-btn">Mathematics - II</button>
-                                <button class="common-btn">Engineering Chemistry</button>
-                                <button class="common-btn">Basic Electric Engineering</button>
-                                <button class="common-btn">English for Professional Communication</button>
+                                <button class="common-btn" onclick="showPopup()">Indian Constitution</button>
+                                <button class="common-btn" onclick="showPopup()">Mathematics - II</button>
+                                <button class="common-btn" onclick="showPopup()">Engineering Chemistry</button>
+                                <button class="common-btn" onclick="showPopup()">Basic Electric Engineering</button>
+                                <button class="common-btn" onclick="showPopup()">English for Professional Communication</button>
                             </div>
                             <div class="grid-item">
                                 <h2>Pre Final Question Papers</h2>
-                                <button class="common-btn">Indian Constitution</button>
-                                <button class="common-btn">Mathematics - II</button>
-                                <button class="common-btn">Engineering Chemistry</button>
-                                <button class="common-btn">Basic Electric Engineering</button>
-                                <button class="common-btn">English for Professional Communication</button>
+                                <button class="common-btn" onclick="showPopup()">Indian Constitution</button>
+                                <button class="common-btn" onclick="showPopup()">Mathematics - II</button>
+                                <button class="common-btn" onclick="showPopup()">Engineering Chemistry</button>
+                                <button class="common-btn" onclick="showPopup()">Basic Electric Engineering</button>
+                                <button class="common-btn" onclick="showPopup()">English for Professional Communication</button>
                             </div>
                             <div class="grid-item">
                                 <h2>Lab Manuals</h2>
-                                <button class="common-btn">Engineering Chemistry Lab</button>
-                                <button class="common-btn">Basic Electric Engineering Lab</button>
-                                <button class="common-btn">Effective Communication Skills Lab</button>
-                                <button class="common-btn">Workshop/Manufacturing Practice</button>
+                                <button class="common-btn" onclick="showPopup()">Engineering Chemistry Lab</button>
+                                <button class="common-btn" onclick="showPopup()">Basic Electric Engineering Lab</button>
+                                <button class="common-btn" onclick="showPopup()">Effective Communication Skills Lab</button>
+                                <button class="common-btn" onclick="showPopup()">Workshop/Manufacturing Practice</button>
                             </div>
                         </div>
                             
                     </div>
                 </div>
 
-        
+                <div class="popup" id="popup">
+                    Not found, please contact admin
+                </div>
         <header>
         </header>
             
@@ -194,6 +196,15 @@
 
 
 
+    </script>
+    <script>
+        function showPopup() {
+            const popup = document.getElementById('popup');
+            popup.style.display = 'block';
+            setTimeout(() => {
+                popup.style.display = 'none';
+            }, 2000);
+        }
     </script>
 
 </body>
