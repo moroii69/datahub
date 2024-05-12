@@ -137,11 +137,63 @@
                             </div>
                             <div class="grid-item">
                                 <h2>Lab Manuals</h2>
-                                <button class="common-btn" onclick="showPopup()">Engineering Chemistry Lab</button>
-                                <button class="common-btn" onclick="showPopup()">Basic Electric Engineering Lab</button>
-                                <button class="common-btn" onclick="showPopup()">Effective Communication Skills Lab</button>
-                                <button class="common-btn" onclick="showPopup()">Workshop/Manufacturing Practice</button>
+                                <button class="common-btn" onclick="openPDF('eclm')">Engineering Chemistry Lab</button>
+                                <button class="common-btn" onclick="openPDF('beelm')">Basic Electric Engineering Lab</button>
+                                <button class="common-btn" onclick="openPDF('ecslm')">Effective Communication Skills Lab</button>
+                                <button class="common-btn" onclick="openPDF('wplm')">Workshop/Manufacturing Practice</button>
                             </div>
+                            <script>
+                                function openPDF(subject) {
+                                    // function to open pdf files based on the subject provided
+                                    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+                                    // checking if the user is on a mobile device
+                                    var pdfPath;
+                                    // variable to hold the path of the pdf file
+                                    
+                                    switch (subject) {
+                                        case 'eclm':
+                                            pdfPath = "../data/sem2/group2/lab_manuals/ec-lm.pdf";
+                                            break;
+                                        // assigning the pdf path for Engineering Chemistry Lab Manual
+                                        case 'beelm':
+                                            pdfPath = "../data/sem2/group2/lab_manuals/bee-lm.pdf";
+                                            break;
+                                        // assigning the pdf path for Basic Electric Engineering Lab Manual
+                                        case 'ecslm':
+                                            pdfPath = "../data/sem2/group2/lab_manuals/ecs-lm.pdf";
+                                            break;
+                                        // assigning the pdf path for Effective Communication Skills Lab Manual
+                                        case 'wplm':
+                                            pdfPath = "../data/sem2/group2/lab_manuals/wmp-lm.pdf";
+                                            break;
+                                        // assigning the pdf path for Workshop/Manufacturing Practice Lab Manual
+                                        case 'english':
+                                            pdfPath = "../data/sem2/group2/lab_manuals/epc-qb.pdf";
+                                            break;
+                                        // assigning the pdf path for English for Professional Communication
+                                        default:
+                                            pdfPath = "";
+                                            break;
+                                        // default case for any other subject, setting an empty path
+                                    }
+                                    
+                                    if (isMobile) {
+                                        // check if the user is on a mobile device
+                                        var link = document.createElement('a');
+                                        // creating a new link element
+                                        link.href = pdfPath;
+                                        // setting the href attribute of the link to the pdf path
+                                        link.download = 'question_bank.pdf';
+                                        // setting the download attribute to initiate a download
+                                        link.click();
+                                        // programmatically clicking the link to initiate the download
+                                    } else {
+                                        // if not on mobile device
+                                        window.open(pdfPath, "_blank");
+                                        // opening the pdf in a new tab
+                                    }
+                                }
+                            </script>
                         </div>
                             
                     </div>
