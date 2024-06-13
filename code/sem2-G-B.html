@@ -105,12 +105,67 @@
                             </script>
                             <div class="grid-item">
                                 <h2>CIE 1 Question Papers</h2>
-                                <button class="common-btn" onclick="showPopup()">Indian Constitution</button>
-                                <button class="common-btn" onclick="showPopup()">Mathematics - II</button>
-                                <button class="common-btn" onclick="showPopup()">Engineering Chemistry</button>
-                                <button class="common-btn" onclick="showPopup()">Basic Electric Engineering</button>
-                                <button class="common-btn" onclick="showPopup()">English for Professional Communication</button>
+                                <button class="common-btn" onclick="openPDFs2g2CIE1('ic_cie1')">Indian Constitution</button>
+                                <button class="common-btn" onclick="openPDFs2g2CIE1('m2_cie1')">Mathematics - II</button>
+                                <button class="common-btn" onclick="openPDFs2g2CIE1('ec_cie1')">Engineering Chemistry</button>
+                                <button class="common-btn" onclick="openPDFs2g2CIE1('bee_cie1')">Basic Electric Engineering</button>
+                                <button class="common-btn" onclick="openPDFs2g2CIE1('epc_cie1')">English for Professional Communication</button>
                             </div>
+
+
+                            <script>
+                                function openPDFs2g2CIE1(subject) {
+                                    // function to open pdf files based on the subject provided
+                                    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+                                    // checking if the user is on a mobile device
+                                    var pdfPath;
+                                    // variable to hold the path of the pdf file
+                                    
+                                    switch (subject) {
+                                        case 'ic_cie1':
+                                            pdfPath = "../data/sem2/group2/cie1_qp/ic-qp.pdf";
+                                            break;
+                                        // assigning the pdf path for Indian Constitution Question Paper
+                                        case 'm2_cie1':
+                                            pdfPath = "../data/sem2/group2/cie1_qp/m2-qp.pdf";
+                                            break;
+                                        // assigning the pdf path for Mathematics - II Question Paper
+                                        case 'ec_cie1':
+                                            pdfPath = "../data/sem2/group2/cie1_qp/ec-qp.pdf";
+                                            break;
+                                        // assigning the pdf path for Engineering Chemistry Question Paper
+                                        case 'bee_cie1':
+                                            pdfPath = "../data/sem2/group2/cie1_qp/bee-qp.pdf";
+                                            break;
+                                        // assigning the pdf path for Basic Electric Engineering Question Paper
+                                        case 'epc_cie1':
+                                            pdfPath = "../data/sem2/group2/cie1_qp/epc-qp.pdf";
+                                            break;
+                                        // assigning the pdf path for English for Professional Communication Question Paper
+                                        default:
+                                            pdfPath = "";
+                                            break;
+                                        // default case for any other subject, setting an empty path
+                                    }
+                                    
+                                    if (isMobile) {
+                                        // check if the user is on a mobile device
+                                        var link = document.createElement('a');
+                                        // creating a new link element
+                                        link.href = pdfPath;
+                                        // setting the href attribute of the link to the pdf path
+                                        link.download = 'question_bank.pdf';
+                                        // setting the download attribute to initiate a download
+                                        link.click();
+                                        // programmatically clicking the link to initiate the download
+                                    } else {
+                                        // if not on mobile device
+                                        window.open(pdfPath, "_blank");
+                                        // opening the pdf in a new tab
+                                    }
+                                }
+                            </script>
+
                             <div class="grid-item">
                                 <h2>CIE 2 Question Papers</h2>
                                 <button class="common-btn" onclick="showPopup()">Indian Constitution</button>
