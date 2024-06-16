@@ -16,7 +16,7 @@ DataHub LIET: a centralized platform for first-year students at Lords Institute 
 
 ## Getting Started
 
-Visit [DataHub LIET](https://moroii69.github.io/datahub/index-home.html) to explore resources. Reach out for assistance.
+Visit [DataHub LIET](https://moroii69.github.io/datahub/) to explore resources. Reach out for assistance.
 
 ## Contributing
 
