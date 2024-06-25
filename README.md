@@ -36,3 +36,7 @@ This repository is under [MIT License](https://github.com/abdulvasay-234/datahub
 
 ## NOTE:
 This site will be ready and be available to access on 01-05-2024
+
+## Security Policy
+
+For information on how to report a security vulnerability, please see the [Security Policy](./SECURITY.md).
